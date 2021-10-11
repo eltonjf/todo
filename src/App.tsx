@@ -7,8 +7,8 @@ import { AddArea } from './components/AddArea';
 const App = () => {
 
   const [list, setList] = useState<Item[]>([
-    { id: 1, name: 'Comprar café', done: false },
-    { id: 2, name: 'Comprar Filtro de café', done: true }
+    { id: 1, name: 'Clean the bathroom', done: false },
+    { id: 2, name: 'Buy coffee', done: true }
   ]);
 
   const handleAddTask = (taskName: string) => {
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <C.Container>
       <C.Area>
-        <C.Header>Lista de Tarefas</C.Header>
+        <C.Header>To Do List</C.Header>
 
         <AddArea onEnter={handleAddTask} />
         
